@@ -161,16 +161,18 @@ nav > a:hover{
 }
 
 #contato{
-    text-align: center;
+    text-align: justify;
     padding: 20px;
 }
 
 #contato > h2{
     color: var(--azul-confeiteiro);
+    margin-left: 100px;
 }
 
 #contato > p{
     padding: 10px;
+    margin-left: 100px;
     margin-bottom: 10px;
 }
 
@@ -179,6 +181,8 @@ button{
     border: none;
     color: white;
     padding: 15px 35px;
+    display: block;
+    margin: auto;
     font-size:16px;
     border-radius: 30px;
     cursor: pointer;
