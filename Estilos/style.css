@@ -1,34 +1,38 @@
-@charset "UTF-8"
+@charset "UTF-8";
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
+
 :root{
-    --azul-claro: #71CFFF;
-    --amarelo-claro: #FFFCA1;
-    --amarelo-escuro: #FFD754; 
-    --azul-escuro: #0022FF;
-    --azul-roxo: #1327AB;
+    
+    --azul-noite: #1A1A2E;
+    --azul-ceu: #3BB8E8;
+    --azul-confeiteiro: #2196A4;
+    --azul-gelo: #EEF8FD;
+    --baunilha: #F9F3EC;
+    --amarelo-doce: #F7C94B;
 }
 
 body{
     font-family: Arial;
     margin:0;
-    background-color:#fff7f9;
-    color:#333;
+    background-color: var(--baunilha);
+    color:var(--azul-noite);
 }
 
 header{
-    background-image: linear-gradient(to bottom, #71CFFF, rgb(130, 250, 254)) ;
-    color: var(--azul-roxo);
+    background-color: var(--azul-ceu);
+    color: var(--azul-noite);
     padding: 20px;
     text-align: center;
 }
 
 nav{
     text-align: center;
-    background-color: rgb(130, 250, 254);
+    background-color: var(--azul-ceu);
     border-top: 2px, solid, black;
 }
 
@@ -58,7 +62,7 @@ nav > a:hover{
 
 .botao{
     background-color:white;
-    color:#ff4f84;
+    color:var(--azul-confeiteiro);
     padding: 12px 25px;
     border-radius: 25px;
     text-decoration: none;
@@ -66,13 +70,13 @@ nav > a:hover{
 }
 
 .botao:hover{
-    background-color: #ff4f84;
+    background-color: var(--azul-confeiteiro);
     color: white;
 }
 
 #docinhos{
     padding: 40px;
-    background-image: linear-gradient(to bottom, rgb(255, 255, 213), rgb(148, 193, 255));
+    background-color: var(--azul-gelo);
 }
 
 section{
@@ -88,9 +92,10 @@ section{
 }
 
 .card{
-    background-color: white;
+    background-color: var(--baunilha);
     padding: 20px;
     border-radius: 12px;
+    border-left: 3px solid var(--azul-ceu);
     width: 220px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -102,11 +107,13 @@ section{
     gap: 25px;
 }
 
-
+main h2, h3{
+    color: var(--azul-confeiteiro);
+}
 
 
 button{
-    background-color:#ff4f84;
+    background-color:var(--azul-confeiteiro);
     border:none;
     color:white;
     padding:15px 35px;
@@ -116,7 +123,7 @@ button{
 }
 
 footer{
-    background-color:#ff7fa3;
+    background-color:var(--azul-noite);
     color:white;
     text-align:center;
     padding:20px;
