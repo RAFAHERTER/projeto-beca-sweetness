@@ -7,7 +7,6 @@
 
 
 :root{
-    
     --azul-noite: #1A1A2E;
     --azul-ceu: #3BB8E8;
     --azul-confeiteiro: #2196A4;
@@ -18,70 +17,88 @@
 
 body{
     font-family: Arial;
-    margin:0;
     background-color: var(--baunilha);
     color:var(--azul-noite);
+}
+
+main h2, h3{
+    color: var(--azul-confeiteiro);
 }
 
 header{
     background-color: var(--azul-ceu);
     color: var(--azul-noite);
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
 nav{
     text-align: center;
     background-color: var(--azul-ceu);
-    border-top: 2px, solid, black;
+    padding: 10px;
+    
 }
 
+
 nav > a{
-    color: var(--azul-roxo);
+    transition-duration: 0.3s;
+    color: var(--azul-noite);
     text-decoration: none;
     margin: 20px;
     font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 nav > a:hover{
+    background-color: var(--azul-noite);
+    
     text-decoration: underline;
-    color: rgba(0, 0, 0, 0.334);
+    color: var(--azul-ceu);
 }
 
 
 #inicio{
-    background-image: linear-gradient(to bottom, rgb(130, 250, 254), rgb(255, 255, 213));
+    background-color: var(--azul-gelo);
     text-align:center;
     padding: 20px 20px 0px 20px;
 }
 
+#incio h2{
+    margin: 10px;
+}
+
 #inicio > p{
-    margin-bottom: 20px;
+    margin: 20px 0px;
     padding-bottom: 10px;
 }
 
-.botao{
+.instagram{
     background-color:white;
     color:var(--azul-confeiteiro);
     padding: 12px 25px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.271);
 }
 
-.botao:hover{
+.instagram:hover{
     background-color: var(--azul-confeiteiro);
     color: white;
+    box-shadow: 0px 0px 3px rgb(33, 151, 164);
 }
 
 #docinhos{
     padding: 40px;
     background-color: var(--azul-gelo);
+    text-align: center;
 }
 
-section{
-    padding:50px;
-    text-align:center;
+#docinhos > h2{
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .doces{
@@ -93,33 +110,50 @@ section{
 
 .card{
     background-color: var(--baunilha);
-    padding: 20px;
+    padding: 30px;
     border-radius: 12px;
     border-left: 3px solid var(--azul-ceu);
     width: 220px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.card > h3{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.card > p{
+    margin: 10px;
+}
+
 #bolos{
+    background-color: var(--azul-gelo);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
+    padding:50px;
+    text-align:center;
 }
 
-main h2, h3{
-    color: var(--azul-confeiteiro);
+#contato{
+    text-align: center;
+    padding: 20px;
 }
 
+#contato > p{
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
 button{
     background-color:var(--azul-confeiteiro);
-    border:none;
-    color:white;
-    padding:15px 35px;
+    border: none;
+    color: white;
+    padding: 15px 35px;
     font-size:16px;
-    border-radius:30px;
-    cursor:pointer;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 footer{
@@ -127,4 +161,8 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
+}
+
+footer > p{
+    padding: 3px;
 }
