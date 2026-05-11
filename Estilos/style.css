@@ -1,0 +1,123 @@
+@charset "UTF-8"
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --azul-claro: #71CFFF;
+    --amarelo-claro: #FFFCA1;
+    --amarelo-escuro: #FFD754; 
+    --azul-escuro: #0022FF;
+    --azul-roxo: #1327AB;
+}
+
+body{
+    font-family: Arial;
+    margin:0;
+    background-color:#fff7f9;
+    color:#333;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #71CFFF, rgb(130, 250, 254)) ;
+    color: var(--azul-roxo);
+    padding: 20px;
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    background-color: rgb(130, 250, 254);
+    border-top: 2px, solid, black;
+}
+
+nav > a{
+    color: var(--azul-roxo);
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.334);
+}
+
+
+#inicio{
+    background-image: linear-gradient(to bottom, rgb(130, 250, 254), rgb(255, 255, 213));
+    text-align:center;
+    padding: 20px 20px 0px 20px;
+}
+
+#inicio > p{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.botao{
+    background-color:white;
+    color:#ff4f84;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover{
+    background-color: #ff4f84;
+    color: white;
+}
+
+#docinhos{
+    padding: 40px;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 213), rgb(148, 193, 255));
+}
+
+section{
+    padding:50px;
+    text-align:center;
+}
+
+.doces{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#bolos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+
+
+button{
+    background-color:#ff4f84;
+    border:none;
+    color:white;
+    padding:15px 35px;
+    font-size:16px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+footer{
+    background-color:#ff7fa3;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
