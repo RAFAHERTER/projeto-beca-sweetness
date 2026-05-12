@@ -240,26 +240,6 @@ nav > a:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .card{
     background-color: var(--baunilha);
     padding: 30px;
@@ -303,6 +283,15 @@ nav > a:hover{
     padding: 10px;
     margin-left: 100px;
     margin-bottom: 10px;
+}
+
+#contato a{
+    color: var(--azul-confeiteiro);
+    text-decoration: none;
+}
+
+#contato a:hover{
+    text-decoration: underline;
 }
 
 button{
