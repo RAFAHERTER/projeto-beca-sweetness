@@ -137,13 +137,124 @@ nav > a:hover{
     justify-content: center;
     gap: 25px;
 }
+
+.doces p{
+    font-size: 1em;
+    color: var(--azul-confeiteiro);
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.flip-card{
+    perspective: 900px;
+    
+}
+
+.flip-card h3{
+    padding: 20px;
+}
+
+.inner{
+    width: 210px;
+    height: 210px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    border: 1px solid var(--azul-ceu);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.203);
+}
+
+.inner:hover{
+    transform: rotateY(180deg);
+    border: 1px solid black;
+}
+
+
+.front{
+    width: 100%;
+    height: 100%;
+    background-color: var(--baunilha);
+}
+
+.front h3{
+    padding: 40px;
+}
+
+.front, .back{
+    
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+.back{
+    font-size: 0.8em;
+    background-color: var(--azul-ceu);
+    transform: rotateY(180deg);
+}
+
+
+
+
+.back .preco{
+    color: var(--azul-noite);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 80%;
+    text-align: center;
+    color: var(--azul-noite);
+    border-bottom: 0.5px solid rgba(13, 58, 74, 0.2);
+    padding: 4px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9em;
+}
+
+ 
+.back .ingredientes {
+    font-size: 0.8em;
+    color: var(--azul-noite);
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin: 8px 20px 0px 20px;
+    line-height: 1.5;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card{
     background-color: var(--baunilha);
     padding: 30px;
     border-radius: 12px;
-    border-left: 3px solid var(--azul-ceu);
+    border: 1px solid var(--azul-ceu);
     width: 220px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    height: 130px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.121);
 }
 
 .card > h3{
