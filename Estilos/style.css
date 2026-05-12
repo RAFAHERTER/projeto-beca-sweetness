@@ -137,7 +137,6 @@ nav > a:hover{
     justify-content: center;
     gap: 25px;
 }
-
 .card{
     background-color: var(--baunilha);
     padding: 30px;
