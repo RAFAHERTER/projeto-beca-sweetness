@@ -257,18 +257,25 @@ nav > a:hover{
 }
 
 #contato{
-    text-align: justify;
     padding: 20px;
+    display: inline;
+    justify-content: center;
 }
 
-#contato > h2{
+#bloco-contato{
+    margin: auto;
+    width: 500px;
+}
+
+
+#contato  h2{
     color: var(--azul-confeiteiro);
     margin-left: 100px;
 }
 
-#contato > p{
+#contato  p{
     padding: 10px;
-    margin-left: 100px;
+    margin-left: 90px;
     margin-bottom: 10px;
 }
 
@@ -280,6 +287,7 @@ nav > a:hover{
 #contato a:hover{
     text-decoration: underline;
 }
+
 
 button{
     background-color:var(--azul-confeiteiro);
