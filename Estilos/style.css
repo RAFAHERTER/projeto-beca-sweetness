@@ -239,26 +239,6 @@ nav > a:hover{
     font-family: 'Nunito', sans-serif;
 }
 
-
-.card{
-    background-color: var(--baunilha);
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid var(--azul-ceu);
-    width: 220px;
-    height: 130px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.121);
-}
-
-.card > h3{
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-
-.card > p{
-    margin: 10px;
-}
-
 #bolos{
     background-color: var(--azul-gelo);
     display: flex;
