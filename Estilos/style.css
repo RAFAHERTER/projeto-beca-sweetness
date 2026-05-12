@@ -49,7 +49,7 @@ main h3 a{
 }
 
 main h3:hover{
-    color: var(--azul-confeiteiro);
+    
     text-decoration: underline;
 }
 
@@ -151,7 +151,7 @@ nav > a:hover{
 }
 
 .flip-card h3{
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 .inner{
@@ -178,7 +178,11 @@ nav > a:hover{
 }
 
 .front h3{
-    padding: 40px;
+    padding: 40px 40px 10px 40px;
+}
+
+.front h3:hover{
+    color: var(--azul-confeiteiro);
 }
 
 .front, .back{
@@ -190,6 +194,13 @@ nav > a:hover{
     backface-visibility: hidden;
 }
 
+.front img{
+    display: inline;
+    text-align: center;
+    margin-right: 20px;
+    width: 100px;
+    height: 70px;
+}
 
 .back{
     font-size: 0.8em;
@@ -197,7 +208,9 @@ nav > a:hover{
     transform: rotateY(180deg);
 }
 
-
+.back h3{
+    padding-bottom: -10px;
+}
 
 
 .back .preco{
