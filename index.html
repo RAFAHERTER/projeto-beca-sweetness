@@ -37,25 +37,25 @@
                 <p>Doces artesanais feitos com carinho em Campinas.</p>
     
                 <a class="instagram" href="https://www.instagram.com/beca_sweetness/" target="_blank"> Ver Instagram </a>
-    
+
+
+                <div class="filtro-container">
+                    <label for="filtro">Filtrar: </label>
+                    <select id="filtro" class="escolher-filtro" onchange="filtrar()">
+                        <option
+                        value="todos">Todos</option>
+                        <option value="docinhos">Docinhos</option>
+                        <option value="bolos">Bolos</option>
+                    </select>
+                </div>
+        
         </section>
     
     
     <section id="docinhos">
     
         <h2>Docinhos</h2>
-        <div class="filtro-container">
-            <label for="filtro">Filtrar: </label>
-            <select id="filtro" onchange="filtrar()">
-                <option value="todos">Todos</option>
-                <option value="docinhos">Docinhos</option>
-                <option value="bolos">Bolos</option>
-            </select>
-        </div>
-    
-
-
-
+        
             <div class="doces">
     
                 <div class="flip-card" onclick= "this.classList.toggle('flipped')">

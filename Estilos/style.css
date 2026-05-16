@@ -127,12 +127,12 @@ nav > a:hover{
 }
 
 #docinhos{
-    padding: 40px;
+    padding: 10px 40px 40px 40px;
     background-color: var(--azul-gelo);
     text-align: center;
 }
 
-#docinhos > h2{
+#docinhos h2{
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -143,6 +143,32 @@ nav > a:hover{
     justify-content: center;
     gap: 25px;
 }
+
+
+.filtro-container{
+    margin: 40px 40px 0px 40px;
+    text-align: center;
+}
+
+.filtro-container label{
+    margin-right: 8px;
+    font-weight: 700;
+    color: var(--azul-confeiteiro);
+}
+
+.option{
+    text-decoration: underline;
+}
+
+#filtro{
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: white;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+}
+
 
 .doces p{
     font-size: 1em;
@@ -251,8 +277,12 @@ nav > a:hover{
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
-    padding:50px;
+    padding: 10px 40px 40px 40px;
     text-align:center;
+}
+
+#bolos h2{
+    padding: 10px;
 }
 
 #contato{
