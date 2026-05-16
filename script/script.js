@@ -10,3 +10,7 @@ let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
 window.open(url,'_blank')
 
 }
+
+function voltarAoTopo(){
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}

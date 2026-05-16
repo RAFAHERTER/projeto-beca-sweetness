@@ -44,6 +44,14 @@
     <section id="docinhos">
     
         <h2>Docinhos</h2>
+        <div class="filtro-container">
+            <label for="filtro">Filtrar: </label>
+            <select id="filtro" onchange="filtrar()">
+                <option value="todos">Todos</option>
+                <option value="docinhos">Docinhos</option>
+                <option value="bolos">Bolos</option>
+            </select>
+        </div>
     
 
 
@@ -309,6 +317,7 @@
                 <p><a href="Documento do cardápio/cardápio-beca-sweetness.pdf" download="cardápio-beca-sweetness.pdf" target="_blank">Clique aqui</a> para ter acesso ao nosso cardápio digital </p>
                 <p>Faça os pedidos, no mínimo, com 3 dias de antecedência.</p>
                 <button onclick="pedir()">Pedir pelo WhatsApp</button>
+                <button onclick="voltarAoTopo()">Voltar ao topo</button>
     
 </div>
     
