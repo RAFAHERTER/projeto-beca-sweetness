@@ -53,7 +53,6 @@ main h3 a{
 }
 
 main h3:hover{
-    
     text-decoration: underline;
 }
 
@@ -82,7 +81,7 @@ nav > a{
     transition-duration: 0.3s;
     color: var(--azul-noite);
     text-decoration: none;
-    margin: 20px;
+    margin: 10px;
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
@@ -270,13 +269,14 @@ nav > a:hover{
 
 #contato  h2{
     color: var(--azul-confeiteiro);
-    margin-left: 100px;
+    margin: auto;
+    margin-left: 10px;
 }
 
 #contato  p{
     padding: 10px;
-    margin-left: 90px;
-    margin-bottom: 10px;
+    margin: auto;
+    
 }
 
 #contato a{
