@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Beca Sweetness</title>
+
+    <link rel="stylesheet" href="../Estilos/style.css">
+
+    <link rel="shortcut icon" href="../Imagens/logo-beca-sweetness.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:wght@500;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Beca Sweetness</h1>
+    </header>
+
+    <main class="auth-container">
+        <form id="cadastro-form" class="auth-form" onsubmit="handleCadastro(event)">
+            <h2>Crie sua conta</h2>
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="seu@exemplo.com">
+
+            <label for="senha">Senha</label>
+            <div class="senha-wrapper">
+                <input type="password" id="senha" name="senha" required placeholder="Crie uma senha">
+                <button type="button" class="eye" onclick="togglePassword('senha', this)" aria-label="Mostrar senha">👁️</button>
+            </div>
+
+            <button type="submit" class="primary">Cadastrar</button>
+
+            <p class="muted">Já tem conta? <a href="login.html">Entrar</a></p>
+        </form>
+    </main>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>

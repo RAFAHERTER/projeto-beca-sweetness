@@ -81,9 +81,9 @@ nav > a{
     transition-duration: 0.3s;
     color: var(--azul-noite);
     text-decoration: none;
-    margin: 10px;
+    margin: 10px 10px 20px 10px;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -346,4 +346,85 @@ footer{
 
 footer > p{
     padding: 3px;
+}
+
+/* Estilos para páginas de autenticação (login / cadastro) */
+.auth-container{
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.auth-form{
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-form h2{
+    margin-bottom: 6px;
+    color: var(--azul-confeiteiro);
+}
+
+.auth-form label{
+    font-weight: 600;
+    color: var(--azul-noite);
+}
+
+.auth-form input{
+    padding: 10px 12px;
+    border: 1px solid #dfe7ea;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.senha-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.senha-wrapper input{
+    flex: 1;
+}
+
+.eye{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.primary{
+    background: var(--azul-confeiteiro);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.primary a:hover, .muted a:hover{
+    text-decoration: underline;
+}
+
+.muted{
+    text-align: center;
+    color: #5a6b70;
+    font-size: 0.95em;
+}
+
+.muted a{
+    color: var(--azul-confeiteiro);
+    text-decoration: none;
+}
+
+@media (max-width: 480px){
+    .auth-container{ margin: 20px }
 }
