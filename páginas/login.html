@@ -10,7 +10,15 @@
     <link rel="shortcut icon" href="../Imagens/logo-beca-sweetness.ico" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:wght@500;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
-    
+
+    <style>
+        main{
+            background-color: var(--azul-gelo);
+            border-radius: 12px;
+        }
+        
+    </style>
+
 </head>
 <body>
 
@@ -19,7 +27,7 @@
     </header>
 
     <main class="auth-container">
-        <form id="login-form" class="auth-form" onsubmit="handleLogin(event)">
+        <form id="login-form" class="auth-form" action="../backend/login.php" method="post">
             <h2>Entrar</h2>
 
             <label for="login-email">E-mail</label>
