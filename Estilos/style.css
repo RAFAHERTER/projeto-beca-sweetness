@@ -388,10 +388,6 @@ nav > a:hover{
     font-weight: 700;
 }
 
-button{
-    cursor: pointer;
-}
-
 #pedido-form .btn,
 #bloco-contato button{
     width: 100%;
@@ -412,7 +408,6 @@ button{
 }
 
 #bloco-contato button {
-    width: auto;
     display: inline-block;
     margin-right: 10px;
 }
