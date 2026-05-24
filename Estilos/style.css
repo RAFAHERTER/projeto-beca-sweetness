@@ -174,7 +174,7 @@ nav > a:hover{
     font-size: 1em;
     color: var(--azul-confeiteiro);
     margin-top: 4px;
-    font-weight: 600;
+    font-weight: 600; 
 }
 
 .flip-card{
@@ -302,6 +302,131 @@ nav > a:hover{
     color: var(--azul-confeiteiro);
     margin: auto;
     margin-left: 10px;
+}
+
+
+#contato{
+    background-color: var(--azul-gelo);
+    padding: 40px 20px 60px;
+}
+
+.contato-wrapper{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    min-width: 280px;
+    margin: auto;
+}
+
+#bloco-contato,
+#pedido-form{
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+#bloco-contato h2,
+#pedido-form h2{
+    color: var(--azul-confeiteiro);
+    margin-bottom: 18px;
+}
+
+#bloco-contato p,
+#pedido-form p{
+    line-height: 1.6;
+    color: var(--azul-noite);
+}
+
+#pedido-form label{
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--azul-noite);
+}
+
+#pedido-form input,
+#pedido-form select,
+#pedido-form textarea{
+    width: 95%;
+    border: 1px solid #d7d7d7;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    background: #fafafa;
+    color: var(--azul-noite);
+}
+
+#pedido-form textarea{
+    resize: vertical;
+}
+
+#pedido-form input:focus,
+#pedido-form select:focus,
+#pedido-form textarea:focus{
+    outline: 2px solid var(--azul-confeiteiro);
+}
+
+#pedido-form .nota-form{
+    margin-bottom: 16px;
+    color: var(--azul-noite);
+    font-size: 0.95rem;
+}
+
+.form-error{
+    margin-top: 16px;
+    color: #c62828;
+    font-weight: 700;
+}
+
+button{
+    cursor: pointer;
+}
+
+#pedido-form .btn,
+#bloco-contato button{
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--azul-confeiteiro);
+    color: white;
+    font-weight: 700;
+    transition: background-color 0.25s ease;
+}
+
+#pedido-form .btn:hover,
+#bloco-contato button:hover{
+    background-color: var(--azul-noite);
+}
+
+#bloco-contato button {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media (max-width: 980px) {
+    .contato-wrapper{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #bloco-contato button{
+        width: 100%;
+        margin-bottom: 12px;
+    }
 }
 
 #contato  p{

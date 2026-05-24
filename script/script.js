@@ -7,8 +7,29 @@ let mensagem = "Olá! Vim pelo site da Beca Sweetness e gostaria de fazer uma en
 
 let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
 
-window.open(url,'_blank')
+window.open(url,'_blank') 
 
+}
+
+function enviarPedidoWhatsApp(event){
+    event.preventDefault();
+    const nome = document.getElementById('pedido-nome')?.value.trim() || '';
+    const telefone = document.getElementById('pedido-telefone')?.value.trim() || '';
+    const email = document.getElementById('pedido-email')?.value.trim() || '';
+    const tipo = document.getElementById('pedido-tipo')?.value || '';
+    const detalhes = document.getElementById('pedido-detalhes')?.value.trim() || '';
+    const erro = document.getElementById('pedido-error');
+
+    if(!nome || !telefone || !tipo || !detalhes){
+        if(erro) erro.textContent = 'Por favor, preencha todos os campos obrigatórios (*).';
+        return;
+    }
+
+    if(erro) erro.textContent = '';
+    const mensagem = `Olá! Gostaria de fazer um pedido.%0aNome completo: ${nome}%0aTelefone/WhatsApp: ${telefone}%0aE-mail: ${email || 'Não informado'}%0aTipo de pedido: ${tipo}%0aDetalhes: ${detalhes}`;
+    const numero = '5519999072876';
+    const url = `https://wa.me/${numero}?text=${mensagem}`;
+    window.open(url,'_blank');
 }
 
 function voltarAoTopo(){
@@ -43,7 +64,6 @@ function filtrar(){
     }
 }
 
-// Toggle visibilidade da senha: recebe o id do campo e o botão (opcional)
 function togglePassword(fieldId, btn){
     const input = document.getElementById(fieldId);
     if(!input) return;
