@@ -207,31 +207,53 @@ nav > a:hover{
     width: 100%;
     height: 100%;
     background-color: var(--baunilha);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
 }
 
-.front h3{
-    padding: 40px 40px 10px 40px;
+.card-image{
+    width: 100%;
+    height: 75%;
+    min-height: 110px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.front h3:hover{
+.front-text{
+    padding: 0px 16px 20px 16px;
+    margin-top: -10px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.front-text > p{
+    margin-bottom: 25px;
+}
+
+.front-text h3{
+    margin: 0px;
+    font-size: 1.1em;
+}
+
+.front-text p{
+    margin: 0;
+    font-size: 0.95em;
     color: var(--azul-confeiteiro);
+    font-weight: 600;
 }
 
 .front, .back{
-    
     border-radius: 12px;
     width: 100%;
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-}
-
-.front img{
-    display: inline;
-    text-align: center;
-    margin-right: 20px;
-    width: 100px;
-    height: 70px;
 }
 
 .back{
