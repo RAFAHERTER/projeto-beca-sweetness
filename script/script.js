@@ -1,7 +1,7 @@
 
 function pedir(){
 
-let numero = "5519999072876"
+let numero = "5519991619811"
 
 let mensagem = "Olá! Vim pelo site da Beca Sweetness e gostaria de fazer uma encomenda."
 
@@ -27,7 +27,7 @@ function enviarPedidoWhatsApp(event){
 
     if(erro) erro.textContent = '';
     const mensagem = `Olá! Gostaria de fazer um pedido.%0aNome completo: ${nome}%0aTelefone/WhatsApp: ${telefone}%0aE-mail: ${email || 'Não informado'}%0aTipo de pedido: ${tipo}%0aDetalhes: ${detalhes}`;
-    const numero = '5519999072876';
+    const numero = '5519991619811';
     const url = `https://wa.me/${numero}?text=${mensagem}`;
     window.open(url,'_blank');
 }
